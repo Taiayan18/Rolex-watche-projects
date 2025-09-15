@@ -23,12 +23,16 @@
         background: #255e0e;
         background: linear-gradient(
           90deg,
-          rgb(18, 94, 50) 51%,
-          rgba(16, 196, 55, 0.904) 98%
+          rgb(18, 94, 50) 45%,
+          rgba(0, 0, 0, 0.801) 63%
         );
         height: auto;
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+      
       }
       .logo {
         width: 180px;
@@ -127,10 +131,12 @@
       }
       .fullscreen-video {
         width: 100%;
-        padding-block: 10px;
+        padding-top: 105px;
+        
         height: 700px;
         object-fit: cover;
         display: block;
+        
       }
       .s1 {
         display: flex;
@@ -455,6 +461,9 @@
         transition: 0.5s;
       }
 
+
+     
+
       @media (max-width: 1300px) {
         .menu {
           display: block;
@@ -570,7 +579,7 @@
     </div>
 
     <video autoplay loop muted class="fullscreen-video">
-      <source
+      <source class="vidio"
         src="./images/Rolex new watches 2025 – Once upon a first time (1).mp4"
         type="video/mp4"
       />
